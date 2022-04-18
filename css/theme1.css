@@ -12,8 +12,12 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
-  width: 540px;
-  height: 710px;
+
+  max-width: 100%;
+  height: auto;
+
+  /* width: 540px;
+  height: 710px; */
 }
 
 #selector{
@@ -65,6 +69,10 @@ body {
 }
 
 .allBtn:hover {
+  filter: brightness(110%);
+}
+
+.allBtn:active{
   transform: translate(0, 2%);
 }
 
