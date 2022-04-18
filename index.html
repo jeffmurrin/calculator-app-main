@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme1.css">
 
   <title>Frontend Mentor | Calculator app</title>
 
@@ -43,36 +43,37 @@
       </div>
     </div>
     <div id="display">
-      <input id="displayNumbers" type="text">
+      <input id="displayNumbers" type="text" value="339,981" readonly>
     </div>
+    <div class="divider"></div>
     <div id="keypad">
-      <div>
-        <input type="button" class="calcBtn" value=" 7 ">
-        <input type="button" class="calcBtn" value=" 8 ">
-        <input type="button" class="calcBtn" value=" 9 ">
-        <input type="button" class="deleteBtn" value="DEL">
+      <div class="btnRow">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 7 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 8 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 9 ">
+        <input type="button" class="allBtn squareBtn wordBtn" value="DEL">
       </div>
-      <div>
-        <input type="button" class="calcBtn" value=" 4 ">
-        <input type="button" class="calcBtn" value=" 5 ">
-        <input type="button" class="calcBtn" value=" 6 ">
-        <input type="button" class="calcBtn" value=" + ">
+      <div class="btnRow">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 4 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 5 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 6 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" + ">
       </div>
-      <div>
-        <input type="button" class="calcBtn" value=" 1 ">
-        <input type="button" class="calcBtn" value=" 2 ">
-        <input type="button" class="calcBtn" value=" 3 ">
-        <input type="button" class="calcBtn" value=" - ">
+      <div class="btnRow">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 1 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 2 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 3 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" - ">
       </div>
-      <div>
-        <input type="button" class="calcBtn" value=" . ">
-        <input type="button" class="calcBtn" value=" 0 ">
-        <input type="button" class="calcBtn" value=" / ">
-        <input type="button" class="calcBtn" value=" X ">
+      <div class="btnRow">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" . ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" 0 ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" / ">
+        <input type="button" class="allBtn squareBtn numberBtn" value=" X ">
       </div>
-      <div>
-        <input type="button" class="resetBtn" value="RESET">
-        <input type="button" class="equalsBtn" value="  =  ">
+      <div class="btnRow">
+        <input type="button" class="allBtn rectangleBtn wordBtn" value="RESET">
+        <input type="button" class="allBtn rectangleBtn equalsBtn" value="  =  ">
       </div>
     </div>
   </section>
@@ -80,7 +81,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jeff Murrin</a>.
   </div>
 </body>
 
