@@ -1,23 +1,18 @@
 body {
   background-color: #3a4764;
   background-color: hsl(222, 26%, 31%);
+
+}
+
+.wrapper{
+
 }
 
 #calculator {
-  /* position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); */
-
-  max-width: 100%;
-  height: auto;
-
-  /* width: 540px;
-  height: 710px; */
+  margin: 5% auto 5% auto;
+  vertical-align: middle;
+  width: 540px;
+  height: 710px;
 }
 
 #selector{
