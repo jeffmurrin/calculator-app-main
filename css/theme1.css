@@ -4,24 +4,17 @@ body {
 
 }
 
-.wrapper{
+/* .wrapper{
 
-}
+} */
 
 #calculator {
   margin: 5% auto 5% auto;
-  vertical-align: middle;
   width: 540px;
   height: 710px;
 }
 
-#selector{
-  background-color: #3a4764;
-  background-color: hsl(222, 26%, 31%);
-  color: white;
-  border-radius: 12px;
-  border-style: hidden;
-}
+
 
 #display {
   width: 540px;
@@ -29,6 +22,7 @@ body {
   background-color: hsl(224, 36%, 15%);
   border-radius: 12px;
   border-style: hidden;
+  text-align: center;
 }
 
 #displayNumbers{
@@ -36,11 +30,12 @@ body {
   font-weight: bold;
   text-align: right;
   color: white;
-  margin: 32px 20px;
   width: 500px;
   height: 64px;
   background: transparent;
   border: 0;
+  margin: 5% auto 5% auto;
+
 }
 
 #keypad {
@@ -102,4 +97,75 @@ body {
 
 .btnRow {
   margin-left: 12.5px;
+}
+
+
+#selector{
+  width: 540px;
+  height: 100px;
+  background-color: #3a4764;
+  background-color: hsl(222, 26%, 31%);
+  color: white;
+  border-radius: 12px;
+  border-style: hidden;
+  margin: auto;
+}
+
+.headerLeft{
+  width: 340px;
+  float: left;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.headerMiddle{
+  float: left;
+  height: auto;
+  width: 100px;
+  line-height: 100px;
+  text-align: right;
+}
+.headerRight{
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+
+.toggleNumbers{
+  line-height: 50px;
+  letter-spacing: 7px;
+  text-align: right;
+  /* position: relative;
+  top: 15px;
+  right: 7px; */
+}
+
+.toggleButtons {
+  float: right;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 60px;
+  width: 75%;
+}
+
+/* @media only screen and (max-width: 1200px){
+  body{
+    background-color: green;
+  }
+} */
+
+input[type='radio'] {
+border: 0;
+opacity: 0;
+}
+
+input[type='radio']:checked{
+  accent-color: red;
+  opacity: 100;
+}
+
+input[type='radio']:hover {
+  opacity: 100;
 }
