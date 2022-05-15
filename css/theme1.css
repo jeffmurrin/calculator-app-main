@@ -1,24 +1,43 @@
 body {
   background-color: #3a4764;
   background-color: hsl(222, 26%, 31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-/* .wrapper{
+.container {
 
-} */
+    width: 540px; /* pick whatever width you want */
+}
+.container .outer {
+    width: 100%;
+    padding-top: 50%; /* defines aspect ratio */
+    position: relative;
+}
+.container .outer .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
 #calculator {
+  height: 710px;
   margin: 5% auto 5% auto;
   width: 540px;
-  height: 710px;
 }
 
 #display {
-  width: 540px;
-  height: 128px;
   background-color: hsl(224, 36%, 15%);
   border-radius: 12px;
   border-style: hidden;
+  height: 128px;
   text-align: center;
+  width: 540px;
 }
 
 #displayNumbers {
@@ -158,109 +177,4 @@ input[type='radio']:checked {
 
 input[type='radio']:hover {
   opacity: 100;
-}
-
-@media only screen and (max-width: 1200px) {
-  body {
-    background-color: green;
-  }
-
-  #calculator {
-    margin: 5% auto 5% auto;
-    width: 270px;
-    height: 355px;
-  }
-
-  #selector {
-    width: 270px;
-    height: 50px;
-  }
-
-  .headerLeft {
-    width: 170px;
-    font-size: 20px;
-    line-height: 50px;
-  }
-
-  .headerMiddle {
-  font-size: 6px;
-    width: 50px;
-    line-height: 50px;
-  }
-
-  .headerRight {
-    height: 50px;
-    width: 50px;
-  }
-
-  .toggleNumbers {
-  font-size: 8px;
-    line-height: 25px;
-    letter-spacing: 2.5px;
-  }
-  .toggleButtons {
-    visibility: hidden;
-    border-radius: 30px;
-    width: 30%;
-  }
-
-  input[type='radio'] {
-    visibility: hidden;
-    order: 0;
-    opacity: 0;
-  }
-
-  #display {
-    width: 270px;
-    height: 64px;
-  }
-
-  #displayNumbers {
-    font-size: 25px;
-    width: 250px;
-    height: 32px;
-    margin: 2.5% auto 2.5% auto;
-  }
-
-  #keypad {
-    width: 270px;
-    height: 240px;
-  }
-  .divider {
-    height: 12.5px;
-  }
-
-  .allBtn {
-    height: 32.5px;
-    margin: 6.25px;
-  }
-
-  .squareBtn {
-    width: 50px;
-  }
-
-  .rectangleBtn {
-    width: 115px;
-  }
-
-  .numberBtn {
-    font-size: 15px;
-    box-shadow: 0 2.5px hsl(28, 16%, 65%);
-  }
-
-  .wordBtn {
-    font-size: 10px;
-    box-shadow: 0 2.5px hsl(224, 28%, 35%);
-  }
-
-  .equalsBtn {
-    font-size: 10px;
-    box-shadow: 0 2.5px hsl(6, 70%, 34%);
-  }
-
-  .btnRow {
-    margin-left: 6.25px;
-  }
-
-
 }
